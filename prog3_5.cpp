@@ -1,26 +1,26 @@
-/* Autor: Andriks Imanol Ruiz M醨tinez, Realizado:  05/05/2022
-Escuela: Universidad del Valle de M閤ico Campus Villahermosa
-Materia: Programaci髇 Estructurada
+/* Autor: Andriks Imanol Ruiz M谩rtinez, Realizado:  05/05/2022
+Escuela: Universidad del Valle de M茅xico Campus Villahermosa
+Materia: Programaci贸n Estructurada
 Ciclo: 01/2022
 
-Este es un programa de funciones, ciclos y condicionales en Lenguaje C de la materia de Programaci髇 Estructurada
+Este es un programa de funciones, ciclos y condicionales en Lenguaje C de la materia de Programaci贸n Estructurada
 Muestra el uso de:
 
     -Variables enteras, flotantes y en cadena
     -printf para mostrar mensajes y variables
     -fgets
     -scanf
-    -El uso de include para las librer韆s
-    -Librer韆s de la funci髇 string.h
+    -El uso de include para las librer铆as
+    -Librer铆as de la funci贸n string.h
    	-Uso de condicionales
     -Archivos en cpp y tipo Header
-    -M閠odo de burbuja
+    -M茅todo de burbuja
     -#define MAX
     -Ciclos
     -fflush
     -Funciones
     -FILE: open/close
-    -Comentarios para la documentaci髇 interna del programa
+    -Comentarios para la documentaci贸n interna del programa
 */
 #include<stdio.h>
 #include<stdlib.h>
@@ -45,7 +45,7 @@ void ordenarNombre(struct alumno x[]);
 void ordenarCalificacion(struct alumno x[]);
 //main
 int main(){
-	//Declaraci髇
+	//Declaraci贸n
 	int op;
 	struct alumno grupo[MAX];
 	//Proceso
@@ -104,7 +104,7 @@ void agregar(struct alumno x[]){
 		x[n].promedio=leerf("Promedio: ",0,10);
 		x[n].faltas=leerd("Faltas: ",0,32);
 		n++; //hay que validar
-		pregunta=leerd("緼gregar otro alumno? (1-Si, 0-No): ", 0, 1);
+		pregunta=leerd("驴Agregar otro alumno? (1-Si, 0-No): ", 0, 1);
 		if (pregunta==0) {
 			break;
 		}
@@ -177,7 +177,7 @@ void Per(struct alumno x[]){
 	printf("------------------------\n");
 	system("PAUSE");
 	}
-	//Guardar los datos como arreglos de estructuras en un archivo bimario
+	//Guardar los datos como arreglos de estructuras en un archivo binario
 void guardar(struct alumno x[]){
 	FILE *f;
 	f=fopen("alumnos.dat","w");
